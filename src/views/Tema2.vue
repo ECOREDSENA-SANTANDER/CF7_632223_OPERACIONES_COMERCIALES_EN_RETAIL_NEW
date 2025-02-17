@@ -49,7 +49,7 @@
               .py-2
             .col-md-7.mb-4.mb-md-0
               h5 Validación de transacciones
-              p Debe retirar o desactivar los #[em tag’s] de seguridad, recuerde que algunos proveedores los colocan a sus productos, como cosméticos, medicamentos, algunas marcas de leche en polvo, libros y revistas o los hard tag que le colocan a los textiles, zapatos y otros productos que no se dañan con este sistema de seguridad.
+              p Debe retirar o desactivar los #[em tag’s] de seguridad, recuerde que algunos proveedores los colocan a sus productos, como cosméticos, medicamentos, algunas marcas de leche en polvo, libros y revistas o los #[em hard tag] que le colocan a los textiles, zapatos y otros productos que no se dañan con este sistema de seguridad.
           
           .row.justify-content-center.align-items-center.mb-5.p-4
             .col-md-3.col-8

@@ -575,7 +575,7 @@
                 img(src='@/assets/curso/tema3/img19.png')
             .row.justify-content-center.mb-3
               h5.text-center.text-white ISO 3394
-              p.text-center.text-white Se refiere a las dimensiones de cajas, plataformas o cargas con pallets. Las cajas externas o masters, utilizadas para el embalaje deben ajustarse a 60×40 cm.
+              p.text-center.text-white Se refiere a las dimensiones de cajas, plataformas o cargas con #[em pallets]. Las cajas externas o #[em masters], utilizadas para el embalaje deben ajustarse a 60×40 cm.
                 
           .tarjeta.color-secundario-cus.p-4
             .row.justify-content-center.mb-3
