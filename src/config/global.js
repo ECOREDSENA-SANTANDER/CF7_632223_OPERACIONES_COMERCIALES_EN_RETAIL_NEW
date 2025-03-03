@@ -153,7 +153,7 @@ export default {
       },
       {
         icono: 'fas fa-download',
-        titulo: 'Descargar material',
+        titulo: 'Descargar materiall',
         download: 'downloads/material.zip',
       },
       {
