@@ -30,7 +30,6 @@
                 img(src='@/assets/curso/tema2/img03.png', alt='')
               .py-2
             .col-md-7.mb-4.mb-md-0
-              h5 Validación de transacciones
               p Cuando registre debe verificar que la mercancía esté en perfecto estado, vajillas, huevos, etc.
           
           .row.justify-content-center.align-items-center.mb-5.p-4
@@ -39,7 +38,6 @@
                 img(src='@/assets/curso/tema2/img04.png', alt='')
               .py-2
             .col-md-7.mb-4.mb-md-0
-              h5 Validación de transacciones
               p Cuando registre un producto lo debe ubicar con cuidado y organizadamente en el lugar de empaque, recuerde que la mercancía es del cliente.
           
           .row.justify-content-center.align-items-center.mb-5.p-4
@@ -48,7 +46,6 @@
                 img(src='@/assets/curso/tema2/img05.png', alt='')
               .py-2
             .col-md-7.mb-4.mb-md-0
-              h5 Validación de transacciones
               p Debe retirar o desactivar los #[em tag’s] de seguridad, recuerde que algunos proveedores los colocan a sus productos, como cosméticos, medicamentos, algunas marcas de leche en polvo, libros y revistas o los #[em hard tag] que le colocan a los textiles, zapatos y otros productos que no se dañan con este sistema de seguridad.
           
           .row.justify-content-center.align-items-center.mb-5.p-4
@@ -57,7 +54,6 @@
                 img(src='@/assets/curso/tema2/img06.png', alt='')
               .py-2
             .col-md-7.mb-4.mb-md-0
-              h5 Validación de transacciones
               p Debe revisar con sutileza los recipientes con tapa o empacados en cajas, baldes, ollas, planchas, licuadoras, vajillas, licores, tinturas y las cremas dentales que vea que han sido destapadas. 
               p Estos productos se prestan para guardar mercancía o cambiar su contenido. Su revisión también le permite verificar su estado.
           
@@ -67,7 +63,6 @@
                 img(src='@/assets/curso/tema2/img07.png', alt='')
               .py-2
             .col-md-7.mb-4.mb-md-0
-              h5 Validación de transacciones
               p Los textiles, calzado y productos de papelería los debe revisar al registrar o empacar, tocando los bolsillos de las prendas, revisando las tallas de los zapatos y revisando las revistas y cuadernos. Productos como los bombillos deben verificarse con el cliente si fueron ensayados.           
     
     .row.justify.start.mb-5(data-aos="zoom-in-left")
@@ -217,21 +212,21 @@
                   .col-8
                     figure
                       img.img-a.img-t.my-2(src='@/assets/curso/tema2/num1.png', alt='Texto que describa la imagen')
-                  h4.mb-4.text-center El conocido como modo seguro o 3D Secure.
+                  p.mb-4.text-center El conocido como modo seguro o 3D Secure.
           
           .col-md.tarjeta.color-primario.bdd.p-4
             .row.justify-content-center.mb-4
                 .col-8
                   figure
                     img.img-a.img-t.my-2(src='@/assets/curso/tema2/num2.png', alt='Texto que describa la imagen')
-                h4.mb-4.text-center El modo mixto.
+                p.mb-4.text-center El modo mixto.
             
           .col-md.tarjeta.color-primario.bd.p-4
             .row.justify-content-center.mb-4
               .col-8
                 figure
                   img.img-a.img-t.my-2(src='@/assets/curso/tema2/num3.png', alt='Texto que describa la imagen')
-              h4.mb-4.text-center Modo normal o sin 3D Secure.
+              p.mb-4.text-center Modo normal o sin 3D Secure.
     .py-3
     .row.justify-content-center.align-items-center.mb-4(data-aos="fade-left")
       .col-lg-4.col-8.py-2.col-sm-6
