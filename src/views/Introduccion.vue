@@ -15,7 +15,7 @@
       .col-lg-12.col-12.col-md-12
         figure(data-aos="fade-right").py-2
           .video.mb-1
-            iframe(width="560" height="315" src="https://www.youtube.com/embed/Wu1Erd_-ldQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen)
+            iframe(width="560" height="315" src="https://www.youtube.com/embed/2VIIKKJnZCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen)
           figcaption Video. Destrezas en el punto de pago: introducción
 
 

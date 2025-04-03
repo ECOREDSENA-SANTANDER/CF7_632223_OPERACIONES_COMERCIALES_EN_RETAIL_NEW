@@ -21,7 +21,6 @@
                 img(src='@/assets/curso/tema2/img02.png', alt='')
               .py-2
             .col-md-7.mb-4.mb-md-0
-              h5 Validación de transacciones
               p Debe tener concentración en el registro, sin descuidar lo que pasa alrededor del puesto de pago.
           
           .row.justify-content-center.align-items-center.mb-5.p-4
@@ -308,7 +307,7 @@
       .col-lg-4.col-8.py-2.col-sm-6
         img(src='@/assets/curso/tema2/img10.png', alt='')
       .col-lg-8
-        p Las devoluciones de mercancía que deben asumir las empresas para mantener una buena relación con los clientes le permiten minimizan el impacto económico que implican. La creciente incorporación del modelo omnicanal, es uno de los grandes impulsores de las devoluciones. Para muchas organizaciones la devolución es un dolor de cabeza, pero resulta que, para otras, es una forma natural de hacer negocios.
+        p Las devoluciones de mercancía que deben asumir las empresas para mantener una buena relación con los clientes le permiten minimizar el impacto económico que implican. La creciente incorporación del modelo omnicanal, es uno de los grandes impulsores de las devoluciones. Para muchas organizaciones la devolución es un dolor de cabeza, pero resulta que, para otras, es una forma natural de hacer negocios.
         .cajon.color-secundario.p-4.mb-4
           p El secreto en el manejo de las devoluciones de productos reside en la capacidad que tienen las organizaciones para hacerlas, esto permite comercializar nuevamente lo que esté en buenas condiciones y rescatar del producto las partes útiles que se puedan recuperar y volver a vender en su estado original.
 

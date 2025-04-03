@@ -451,7 +451,7 @@
               .col-7
                 img.mt-2(src='@/assets/curso/tema3/03.png' alt='AvatarTop')
               h5.text-center.mt-4 Envase terciario
-              p.text-center.mt-4 Es el envase que cumple con la función de distribuir, unificar y proteger el producto a lo largo de la cadena comercial.  Este envase se refiere a la caja de cartón corrugado que contendrá varias latas de leche para su distribución a los almácenes.
+              p.text-center.mt-4 Es el envase que cumple con la función de distribuir, unificar y proteger el producto a lo largo de la cadena comercial.  Este envase se refiere a la caja de cartón corrugado que contendrá varias latas de leche para su distribución a los almacenes.
           
           .tarjeta.color-acento-botones.p-4
             .row.justify-content-center.mb-3
@@ -722,7 +722,7 @@
                   img.img-a.img-t(src="@/assets/curso/tema3/gr02.png")
 
             
-            .row.col-xl-11.m-auto(titulo="Acero y aluminio.")
+            .row.col-xl-11.m-auto(titulo="Acero y aluminio")
               .row.justify-content-center
                 .col-lg-8.mb-4
                   p Los dos principales materiales utilizados para la fabricación de empaques son el acero y el aluminio. 
