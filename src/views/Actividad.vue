@@ -21,8 +21,8 @@ export default {
       titulo: 'Cuestionario',
       introduccion:
         '<b> Objetivo:</b> evaluar la comprensión y apropiación de los conceptos fundamentales sobre destrezas en el punto de pago, como complemento para su formación académica.',
-      titulo_aprobado: '¡BUEN TRABAJO!..',
-      titulo_reprobado: 'VUELVA A INTENTARLO..',
+      titulo_aprobado: '¡BUEN TRABAJO!',
+      titulo_reprobado: 'VUELVA A INTENTARLO',
       barajarPreguntas: true,
       preguntas: [
         {
