@@ -2,31 +2,265 @@
   .curso-main-container.pb-3
     BannerInterno(icono="far fa-question-circle" titulo="Actividad didáctica")
     .container.tarjeta.tarjeta--blanca.p-4.p-md-5
-      
-      .row.mb-5.justify-content-center.align-items-center.align-items-lg-stretch
-        .col-6.col-md-4.col-lg-3.mb-4.mb-md-0
-          .tarjeta.h-100.d-flex.align-items-center.p-4
-            figure
-              img(src="@/assets/template/arrastrar_soltar.svg", alt="Texto que describa la imagen")
-        .col-12.col-md-8.col-lg-9
-          .titulo-segundo
-            h2 Destrezas en el punto de pago
-          p.mb-4 Fortalecer los conceptos de Destrezas en el punto de pago, como complemento para su formación académica. 
-          .tarjeta.actividad.p-3
-            .row.justify-content-around.align-items-center            
-              .col-sm.mb-3.mb-sm-0
-                p.fw-bold.mb-0 Arrastrar y soltar coincidencias
-              .col-auto
-                a.boton.boton--b(:href="obtenerLink('/actividades/story.html')" target="_blank")
-                  span Realizar
-                  i.fas.fa-puzzle-piece
-                  
+  
+      #Actividad                
+        <Actividad :cuestionario="cuestionario"/>
+  
   </template>
 
 <script>
+import Actividad from 'ecored-pkg-fliz/plugin/components/actividad/Actividad.vue'
 export default {
-  name: 'Actividad',
+  name: 'ActividadDidactica',
+  components: {
+    Actividad,
+  },
+  data: () => ({
+    cuestionario: {
+      tema: 'Destrezas en el punto de pago',
+      titulo: 'Cuestionario',
+      introduccion:
+        '<b> Objetivo:</b> evaluar la comprensión y apropiación de los conceptos fundamentales sobre destrezas en el punto de pago, como complemento para su formación académica.',
+      titulo_aprobado: '¡BUEN TRABAJO!..',
+      titulo_reprobado: 'VUELVA A INTENTARLO..',
+      barajarPreguntas: true,
+      preguntas: [
+        {
+          id: 1,
+          texto:
+            'La base de la caja es el dinero inicial en billetes y monedas que se utiliza para dar cambio a los clientes.',
+          imagen: require('@/assets/actividad/imagen1.png'),
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Verdadero',
+              esCorrecta: true,
+            },
+            {
+              id: 'b',
+              texto: 'Falso',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            '¡Felicitaciones! Ha captado con claridad los conceptos de destrezas en el punto de pago.',
+          mensaje_incorrecto:
+            'Respuesta incorrecta, revise nuevamente el contenido del componente formativo. ',
+        },
+        {
+          id: 2,
+          texto:
+            'El precio es la cantidad que se paga por un producto o servicio, y refleja su calidad y cantidad en el intercambio de compra-venta.',
+          imagen: require('@/assets/actividad/imagen2.png'),
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Verdadero',
+              esCorrecta: true,
+            },
+            {
+              id: 'b',
+              texto: 'Falso',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            '¡Felicitaciones! Ha captado con claridad los conceptos de destrezas en el punto de pago.',
+          mensaje_incorrecto:
+            'Respuesta incorrecta, revise nuevamente el contenido del componente formativo. ',
+        },
+        {
+          id: 3,
+          texto:
+            'Las empresas han dejado de usar tarjetas y pagos móviles, optando por métodos tradicionales como el trueque. Las plataformas en línea han perdido popularidad por la caída en la demanda de pagos.  ',
+          imagen: require('@/assets/actividad/imagen3.png'),
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Verdadero',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Falso',
+              esCorrecta: true,
+            },
+          ],
+          mensaje_correcto:
+            '¡Felicitaciones! Ha captado con claridad los conceptos de destrezas en el punto de pago.',
+          mensaje_incorrecto:
+            'Respuesta incorrecta, revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 4,
+          texto:
+            'Se puede afirmar que los tres niveles de seguridad de pago son: Modo seguro o 3D Secure, modo mixto, modo normal (sin 3D Secure).',
+          imagen: require('@/assets/actividad/imagen4.png'),
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Verdadero',
+              esCorrecta: true,
+            },
+            {
+              id: 'b',
+              texto: 'Falso',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            '¡Felicitaciones! Ha captado con claridad los conceptos de destrezas en el punto de pago. ',
+          mensaje_incorrecto:
+            'Respuesta incorrecta, revise nuevamente el contenido del componente formativo. ',
+        },
+        {
+          id: 5,
+          texto:
+            'Un error común en el cierre de caja es el excedente de pago, que ocurre cuando, al hacer el arqueo, hay menos dinero del esperado o un monto mayor al reportado.',
+          imagen: require('@/assets/actividad/imagen1.png'),
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Verdadero',
+              esCorrecta: true,
+            },
+            {
+              id: 'b',
+              texto: 'Falso',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            '¡Felicitaciones! Ha captado con claridad los conceptos de destrezas en el punto de pago. ',
+          mensaje_incorrecto:
+            'Respuesta incorrecta, revise nuevamente el contenido del componente formativo. ',
+        },
+        {
+          id: 6,
+          texto:
+            'El manejo de devoluciones no se basa en revender productos en buen estado, ya que la mayoría resultan en pérdidas irreparables. ',
+          imagen: require('@/assets/actividad/imagen2.png'),
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Verdadero',
+              esCorrecta: true,
+            },
+            {
+              id: 'b',
+              texto: 'Falso',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            '¡Felicitaciones! Ha captado con claridad los conceptos de destrezas en el punto de pago. ',
+          mensaje_incorrecto:
+            'Respuesta incorrecta, revise nuevamente el contenido del componente formativo. ',
+        },
+        {
+          id: 7,
+          texto:
+            'La técnica de empaque simultáneo consiste en empacar los productos mientras se registran, lo que agiliza la atención al cliente y reduce la congestión en el punto de pago.',
+          imagen: require('@/assets/actividad/imagen3.png'),
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Verdadero',
+              esCorrecta: true,
+            },
+            {
+              id: 'b',
+              texto: 'Falso',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            '¡Felicitaciones! Ha captado con claridad los conceptos de destrezas en el punto de pago. ',
+          mensaje_incorrecto:
+            'Respuesta incorrecta, revise nuevamente el contenido del componente formativo. ',
+        },
+        {
+          id: 8,
+          texto:
+            'El empaque es muy importante, ya que debe garantizar la protección y conservación del producto durante el transporte, almacenamiento y entrega al cliente. ',
+          imagen: require('@/assets/actividad/imagen4.png'),
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Verdadero',
+              esCorrecta: true,
+            },
+            {
+              id: 'b',
+              texto: 'Falso',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            '¡Felicitaciones! Ha captado con claridad los conceptos de destrezas en el punto de pago. ',
+          mensaje_incorrecto:
+            'Respuesta incorrecta, revise nuevamente el contenido del componente formativo. ',
+        },
+        {
+          id: 9,
+          texto:
+            'Para la elaboración de empaques y embalajes, no es necesario considerar factores como el tipo de producto o el modo de transporte, ya que cualquier empaque servirá sin importar estas variables. ',
+          imagen: require('@/assets/actividad/imagen1.png'),
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Verdadero',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Falso',
+              esCorrecta: true,
+            },
+          ],
+          mensaje_correcto:
+            '¡Felicitaciones! Ha captado con claridad los conceptos de destrezas en el punto de pago. ',
+          mensaje_incorrecto:
+            'Respuesta incorrecta, revise nuevamente el contenido del componente formativo. ',
+        },
+        {
+          id: 10,
+          texto:
+            'La norma ISO R87 se refiere al etiquetado de envases para la venta individual, incluyendo la descripción de ingredientes. ',
+          imagen: require('@/assets/actividad/imagen2.png'),
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Verdadero',
+              esCorrecta: true,
+            },
+            {
+              id: 'b',
+              texto: 'Falso',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            '¡Felicitaciones! Ha captado con claridad los conceptos de destrezas en el punto de pago. ',
+          mensaje_incorrecto:
+            'Respuesta incorrecta, revise nuevamente el contenido del componente formativo. ',
+        },
+      ],
+      mensaje_final_aprobado:
+        '¡Excelente trabajo! posee una buena comprensión sobre destrezas en el punto de pago. ¡Siga explorando este fascinante mundo!',
+      mensaje_final_reprobado:
+        'No ha superado la actividad. Le recomendamos volver a revisar el componente formativo e intentar nuevamente la actividad didáctica.',
+    },
+  }),
 }
 </script>
-
-<style lang="sass"></style>
